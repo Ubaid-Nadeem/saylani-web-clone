@@ -1,3 +1,8 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
 .top-bar {
     background-color: #eeeeee;
     color: #6a666a;
@@ -29,6 +34,7 @@
 
 .logo {
     width: 220px;
+    cursor: pointer;
 }
 
 .navbar {
@@ -76,10 +82,58 @@
 
 }
 
+.hero-container {
+    display: flex;
+    /* background-color: #d9d9d9; */
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
+.hero-container img {
+    width: 500px;
+}
 
+.hero-container h2 {
+    /* font-weight: 700; */
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
 
+.hero-container h2 span {
+    color: #8dc63f;
+}
 
+.hero-container h3 {
+    color: rgba(0, 0, 0, 0.8);
+
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-container h3 span {
+    color: #0d6db7;
+}
+
+.hero-container p {
+    color: #636363;
+    width: 90%;
+    font-size: 18px;
+
+}
+
+.hero-container button {
+    background: none;
+    width: 190px;
+    height: 50px;
+    color: #575656;
+    /* padding: 15px 35px; */
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid gray;
+}
 
 @media screen and (max-width : 991px) {
     .logo {
@@ -98,13 +152,91 @@
 
     .top-bar-child {
         padding-top: 3px;
-        padding-bottom: 3px ;
+        padding-bottom: 3px;
     }
 
     .language {
         border: 1px solid #d9d9d9;
 
     }
+
+    .hero-container img {
+        width: 280px;
+    }
+
+    .hero-container h2 {
+        font-size: 38px;
+    }
+
+    .hero-container h2 span {
+        color: #8dc63f;
+    }
+
+    .hero-container h3 {
+        font-size: 22px;
+    }
+
+
+    .hero-container p {
+        font-size: 16px;
+
+    }
+
+}
+
+@media screen and (max-width : 770px) {
+    .hero-container img {
+        width: 230px;
+    }
+
+    .hero-container h2 {
+        font-size: 30px;
+    }
+
+    .hero-container h2 span {
+        color: #8dc63f;
+    }
+
+    .hero-container h3 {
+        font-size: 18px;
+    }
+
+
+    .hero-container p {
+        font-size: 12px;
+    }
+
+    .hero-container button {
+        width: 150px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width : 570px) {
+    .hero-container img {
+        display: none;
+    }
+
+    .hero-container h2 {
+        font-size: 28px;
+    }
+
+    .hero-container h2 span {
+        color: #8dc63f;
+    }
+
+    .hero-container h3 {
+        font-size: 16px;
+    }
+
+
+    .hero-container p {
+        width: 100%;
+        font-size: 11px;
+    }
+
+
 }
 
 @media screen and (max-width : 375px) {
@@ -116,5 +248,9 @@
 
     .top-bar-child div {
         padding: 4px;
+    }
+
+    .hero-container img {
+        display: none;
     }
 }
