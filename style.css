@@ -1,0 +1,116 @@
+.top-bar {
+    background-color: #eeeeee;
+    color: #6a666a;
+    width: 100%;
+
+}
+
+.top-bar-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar-child div {
+    padding: 7px;
+    font-size: 13px;
+}
+
+.social-details span {
+    margin: 10px;
+}
+
+.language {
+    background-color: #ffff;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.logo {
+    width: 220px;
+}
+
+.navbar {
+    box-shadow: 1px 1px 4px lightgray;
+    background-color: #ffff;
+}
+
+.navbar ul li a {
+    color: #636363;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 2px;
+
+}
+
+.active-nav {
+    color: #0d6db7 !important;
+}
+
+.overseas-nav-active {
+    color: #8dc63f !important;
+}
+
+.nav-btn-container {
+    display: flex;
+}
+
+.donate-btn {
+    background-color: #0d6db7;
+    color: #ffff;
+    padding: 11px;
+    margin: 5px;
+
+}
+
+.sponsor-btn {
+    background-color: #8dc63f;
+    color: #ffff;
+    padding: 11px;
+    margin: 5px;
+
+}
+
+
+
+
+
+
+@media screen and (max-width : 991px) {
+    .logo {
+        width: 190px;
+    }
+
+    .donate-btn,
+    .sponsor-btn {
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .nav-btn-container {
+        flex-direction: column;
+    }
+
+    .top-bar-child {
+        padding-top: 3px;
+        padding-bottom: 3px ;
+    }
+
+    .language {
+        border: 1px solid #d9d9d9;
+
+    }
+}
+
+@media screen and (max-width : 375px) {
+
+    .social-details span {
+        display: block;
+        margin: 5px;
+    }
+
+    .top-bar-child div {
+        padding: 4px;
+    }
+}
