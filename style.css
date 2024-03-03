@@ -274,6 +274,7 @@
 .saylani-work-container {
     gap: 10px;
     margin-top: 30px;
+    margin-bottom: 30px;
     row-gap: 10px;
 }
 
@@ -300,8 +301,88 @@
 }
 
 
+.footer-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("Images/footer-bg.png");
+    background-position: center;
+    background-size: cover;
 
+}
 
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-section ul li {
+    font-size: 15px;
+    padding: 5px;
+}
+.footer-section ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-section img {
+    width: 300px;
+}
+
+.social-media-icons span i {
+    font-size: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.footer-section-1 {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #ffff;
+    justify-content: space-between;
+}
+
+.contact-details p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.contact-details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin-left: 20px; */
+}
+
+.facebook {
+    color: #5571e3;
+    /* background-color: #ffff; */
+
+}
+
+.twitter {
+    color: #50bac3;
+    /* background-color: #ffff; */
+
+}
+
+.youtube {
+    color: #e36955;
+    /* background-color: #ffff; */
+
+}
+
+.whatsapp {
+    color: #008000;
+    /* background-color: #ffff; */
+
+}
+
+.social-media-icons {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
 
 @media screen and (max-width : 991px) {
     .logo {
@@ -366,10 +447,11 @@
         width: 225px;
         height: 200px;
     }
+
     .saylani-work {
         width: 355px;
     }
-    
+
 }
 
 @media screen and (max-width : 770px) {
@@ -403,12 +485,22 @@
         width: 100%;
         height: 200px;
     }
-    
+
     .saylani-work {
         width: 100%;
     }
-    .saylani-work-container{
+
+    .saylani-work-container {
         padding: 10px;
+    }
+
+    .footer-section-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section-1 {
+        flex-direction: column;
     }
 }
 
@@ -443,6 +535,7 @@
     .serving-container>div {
         padding: 10px;
     }
+
 }
 
 @media screen and (max-width : 375px) {
